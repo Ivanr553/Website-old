@@ -13,9 +13,10 @@ header {
   align-items: center;
 }
 body {
-  height: 100;
+  height: 100%;
   padding: 0px;
   margin: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 #header-h1 {
   margin-bottom: 5px;
@@ -73,9 +74,31 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-#div-body-1 {
-  text-align: center;
-}
 #body-h1 {
   text-align: center;
+}
+#div-body-1 {
+  text-align: center;
+  background-image: url("http://www.luc.edu/media/lucedu/conference/panoramic/LSC-pano-sept-2016.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+#greenhouse {
+  background-image: url("ecodome.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  align-content: center;
+}
+#greenhouse-back {
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  background-color: rgba(20,20,20, 0.5);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  align-content: center;
 }
