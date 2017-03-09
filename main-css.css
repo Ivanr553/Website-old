@@ -6,17 +6,29 @@ header {
   background-image: url("mac-back-1.jpg");
   height: 100vh;
   background-size: cover;
-  margin: 0px;
+  margin-bottom: -20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 body {
   height: 100%;
   padding: 0px;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.6);
+}
+#name {
+  position: absolute;
+  font-size: 20px;
+  right: 0px;
+  top: 0px;
+  margin: 7px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(200, 200, 200, 0.4);
+  font-family: monospace;
+  text-align: center;
 }
 #header-h1 {
   margin-bottom: 5px;
@@ -75,7 +87,7 @@ body {
   animation-fill-mode: forwards;
 }
 #body-h1 {
-  text-align: center;
+  text-align: center
 }
 #div-body-1 {
   text-align: center;
@@ -85,20 +97,159 @@ body {
   width: auto;
   position: relative;
 }
+#education {
+  background-color: rgba(20, 20, 20, 0.6);
+  padding: 10px 0px 10px 0px;
+}
 #greenhouse {
   background-image: url("ecodome.jpg");
   background-size: cover;
-  width: 300px;
-  height: 200px;
-  align-content: center;
+  width: 25vw;
+  height: 20vh;
+  float: right;
+  border: 2px solid rgba(70, 70, 70, 1);
+  animation: slideshow-greenhouse 18s alternate infinite;
+}
+#greenhouse-span {
+  float: right;;
+  height: 80%;
+  width: 20vw;
+  text-align: center;
+  padding: 2vh 1vw 0vh 1vw;
+  font-size: 2.3vmin;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #greenhouse-back {
   position: absolute;
-  left: 50px;
-  top: 150px;
-  background-color: rgba(20,20,20, 0.5);
-  width: 300px;
-  height: 200px;
+  right: 6vw;
+  top: 42vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 49vw;
+  height: 20vh;
   padding: 10px;
   align-content: center;
+  justify-content: center;
+}
+#IES-back {
+  position: absolute;
+  left: 6vw;
+  top: 14vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 55vw;
+  height: 20vh;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+}
+#IES {
+  background-image: url("IES.jpg");
+  background-size: cover;
+  width: 25vw;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgba(70, 70, 70, 1);
+  animation: slideshow-ies 18s alternate infinite;
+}
+#IES-span {
+  font-size: 2vmin;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#aquaponics-back {
+  position: absolute;
+  left: 6vw;
+  top: 70vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 55vw;
+  height: 20vh;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+}
+#aquaponics {
+  background-image: url("aquaponics.jpg");
+  background-size: cover;
+  width: 25vw;
+  height: 20vh;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgba(70, 70, 70, 1);
+}
+#aquaponics-span {
+  font-size: 2vmin;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes slideshow-ies {
+  0% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    background-image: url("http://www.luc.edu/media/lucedu/sustainability-new/images420/ies-sun420.jpg");
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+    background-image: url("IES.jpg");
+  }
+  78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url("http://farm8.staticflickr.com/7635/17237749701_e54ea732e1_b.jpg");
+  }
+}
+@keyframes slideshow-greenhouse {
+  0% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    background-image: url("http://www.wsp-pb.com/Globaln/USA/Halvorson/News/Loyola%20IES%20(1).jpg");
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+    background-image: url("http://www.luc.edu/media/lucedu/sustainability-new/images1000x560/IES-green-detail-web.jpg");
+  }
+  78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url("http://wp.streetwise.co/wp-content/blogs.dir/3/files/2015/07/Screen-Shot-2015-07-06-at-3.59.13-PM-630x419.png");
+  }
+}
+#div-body-work {
+  background-image: url("office.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
