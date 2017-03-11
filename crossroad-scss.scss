@@ -1,0 +1,93 @@
+body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("images/mac-back-1.jpg");
+  background-size: cover;
+}
+.branch {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: hide 1s forwards;
+}
+.branch:hover {
+  transform: scale(2, 2);
+  transition-duration: 1s;
+  animation: show 1s forwards;
+}
+.branch:hover .ring {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+@keyframes show {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes hide {
+  0% {
+    color: black;
+  }
+  100% {
+    color: transparent;
+  }
+}
+#center {
+  width: 34vh;
+  height: 34vh;
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  font-family: monospace;
+  cursor: default;
+}
+#branch-education {
+  left: -6vh;
+  top: -4vh;
+  background-image: url("images/luc-back.jpg");
+  background-size: cover;
+  transform-origin: bottom right;
+  font-size: 12px;
+}
+#branch-work {
+  right: -6vh;
+  top: -4vh;
+  background-image: url("images/office.jpg");
+  background-size: cover;
+  transform-origin: bottom left;
+}
+#branch-resume {
+  left: -9vh;
+  bottom: 2vh;
+  background-image: url("images/resume-img.jpg");
+  background-size: cover;
+  transform-origin: top right;
+}
+#branch-projects {
+  right: -9vh;
+  bottom: 2vh;
+  background-image: url("images/git.png");
+  background-size: cover;
+  transform-origin: top left;
+}
