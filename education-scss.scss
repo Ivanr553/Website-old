@@ -1,0 +1,322 @@
+html {
+  height: 100%;
+  margin: 0px;
+  /*background-color: rgb(208, 226, 242);*/
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-image: url("images/luc-back.jpg");
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0px;
+  /*box-shadow: 0px 0px 50px black;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.5);*/
+}
+span {
+  text-align: center;
+}
+a {
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+}
+.span-body {
+  width: 60vw;
+  display: block;
+  font-size: 20px;
+  background-color: rgba(20,20,20, 0.8);
+  padding: 30px 60px 0px 60px;
+  color: rgba(200, 200, 200, 0.75);
+}
+#div1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  background-image: url("https://images7.alphacoders.com/697/697523.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*#luc-logo {
+  height: 15vh;
+  width: 20vh;
+  position: absolute;
+  right: 3vw;
+  top: 4vh;
+  padding: 0.5vh;
+  background-color: rgba(20,20,20, 0.4);
+}*/
+#greenhouse {
+  background-image: url("images/ecodome.jpg");
+  background-size: cover;
+  width: 22vw;
+  height: 100%;
+  float: right;
+  border: 2px solid rgba(70, 70, 70, 1);
+  animation: slideshow-greenhouse 18s alternate infinite;
+}
+#greenhouse-span {
+  float: right;
+  height: 80%;
+  width: 20vw;
+  text-align: center;
+  padding: 2vh 1vw 0vh 1vw;
+  font-size: 2.2vmin;
+  color: rgba(255, 255, 255, 0.6);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#greenhouse-back {
+  position: absolute;
+  right: 6vw;
+  top: 41vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 22vw;
+  height: 24vh;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+  animation: reverse-greenhouse 1s forwards;
+}
+#greenhouse-back:hover #greenhouse-span{
+  animation-name: displayit;
+  animation-duration: 2s;
+  animation-delay: 450ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  opacity: 0;
+}
+@keyframes displayit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#greenhouse-back:hover {
+  animation-name: expand-greenhouse;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes expand-greenhouse {
+  0% {
+    width: 22vw;
+  }
+  100% {
+    width: 45vw;
+  }
+}
+@keyframes reverse-greenhouse {
+  0% {
+    width: 45vw;
+  }
+  100% {
+    width: 22vw;
+  }
+}
+#IES-back {
+  position: absolute;
+  left: 6vw;
+  top: 12vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 21vw;
+  height: 24vh;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+  animation: reverse-ies 1s forwards;
+}
+#IES-back:hover #IES-span {
+  animation-name: displayit;
+  animation-duration: 2s;
+  animation-delay: 450ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  opacity: 0;
+}
+#IES-back:hover {
+  animation-name: expand-ies;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes expand-ies {
+  0% {
+    width: 21vw;
+  }
+  100% {
+    width: 51vw;
+  }
+}
+@keyframes reverse-ies {
+  0% {
+    width: 51vw;
+  }
+  100% {
+    width: 21vw;
+  }
+}
+#IES {
+  background-image: url("images/IES.jpg");
+  background-size: cover;
+  width: 21vw;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgba(70, 70, 70, 1);
+  animation: slideshow-ies 18s alternate infinite;
+}
+#IES-span {
+  font-size: 2.2vmin;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#curriculum-back {
+  position: absolute;
+  left: 6vw;
+  top: 69vh;
+  background-color: rgba(20,20,20, 0.6);
+  width: 21vw;
+  height: 24vh;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+  animation: reverse-curriculum 1s forwards;
+}
+#curriculum-back:hover {
+  animation: expand-curriculum 600ms forwards;
+}
+@keyframes expand-curriculum {
+  0% {
+    width: 21vw;
+  }
+  100% {
+    width: 51vw;
+  }
+}
+@keyframes reverse-curriculum {
+  0% {
+    width: 51vw;
+  }
+  100% {
+    width: 21vw;
+  }
+}
+#curriculum {
+  background-image: url("images/tour.jpg");
+  background-size: cover;
+  width: 21vw;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgba(70, 70, 70, 1);
+  animation: slideshow-curriculum 18s alternate infinite;
+}
+#curriculum-span {
+  font-size: 2.6vmin;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#curriculum-back:hover #curriculum-span {
+  animation-name: displayit;
+  animation-duration: 2s;
+  animation-delay: 450ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  opacity: 0;
+}
+@keyframes slideshow-ies {
+  0% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    background-image: url("http://www.luc.edu/media/lucedu/sustainability-new/images420/ies-sun420.jpg");
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+    background-image: url("images/IES.jpg");
+  }
+  78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url("http://farm8.staticflickr.com/7635/17237749701_e54ea732e1_b.jpg");
+  }
+}
+@keyframes slideshow-greenhouse {
+  0% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    background-image: url("images/ecodome1.jpg");
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+    background-image: url("images/seedling.jpg");
+  }
+  78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url("images/maggie.png");
+  }
+}
+@keyframes slideshow-curriculum {
+  0% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    background-image: url("images/sg.jpg");
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+    background-image: url("images/aquaponics.jpg");
+  }
+  78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-image: url("images/presentation.jpg");
+  }
+}
