@@ -21,6 +21,7 @@ body {
   align-items: center;
   flex-direction: column;
   animation: hide 1s forwards;
+  font-size: 1.7vh;
 }
 .branch:hover {
   transform: scale(2, 2);
@@ -58,7 +59,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-size: 15px;
+  font-size: 2.7vh;
   font-family: monospace;
   cursor: default;
 }
@@ -68,7 +69,6 @@ body {
   background-image: url("images/luc-back.jpg");
   background-size: cover;
   transform-origin: bottom right;
-  font-size: 12px;
 }
 #branch-work {
   right: -6vh;
@@ -76,6 +76,7 @@ body {
   background-image: url("images/office.jpg");
   background-size: cover;
   transform-origin: bottom left;
+  font-size: 2.4vh;
 }
 #branch-resume {
   left: -9vh;
@@ -90,4 +91,12 @@ body {
   background-image: url("images/git.png");
   background-size: cover;
   transform-origin: top left;
+}
+#branch-blog {
+  bottom: -11.5vh;
+  right: 12.5vh;
+  background-image: url("images/blog.jpg");
+  background-size: cover;
+  transform-origin: top;
+  color: white;
 }
