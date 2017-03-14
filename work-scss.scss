@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  margin: 0px;
+}
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#div-body-work {
+  background-image: url("images/office.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
