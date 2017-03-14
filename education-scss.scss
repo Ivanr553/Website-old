@@ -59,6 +59,7 @@ a {
   float: right;
   border: 2px solid rgba(70, 70, 70, 1);
   animation: slideshow-greenhouse 18s alternate infinite;
+  animation-delay: 3s;
 }
 #greenhouse-span {
   float: right;
@@ -172,6 +173,7 @@ a {
   margin-right: 10px;
   border: 2px solid rgba(70, 70, 70, 1);
   animation: slideshow-ies 18s alternate infinite;
+  animation-delay: 4s;
 }
 #IES-span {
   font-size: 2.2vmin;
@@ -319,4 +321,29 @@ a {
     opacity: 1;
     background-image: url("images/presentation.jpg");
   }
+}
+.bub-image {
+  background-size: cover;
+  border-radius: 100px;
+  width: 20vh;
+  height: 20vh;
+}
+#basil {
+  background-image: url("images/basil.jpg");
+  float: right;
+}
+#greenhouse-air {
+  background-image: url("images/greenhouse-air.jpg");
+  float: left;
+}
+#fox-caption {
+  width: 80%;
+}
+#jazz-band {
+  background-image: url("images/jazz-band.jpg");
+  float: left;
+}
+#euph {
+  background-image: url("images/euph.png");
+  float: right;
 }
