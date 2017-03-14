@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   animation: hide 1s forwards;
   font-size: 1.7vh;
+  font-weight: bold;
 }
 .branch:hover {
   transform: scale(2, 2);
@@ -64,15 +65,15 @@ body {
   cursor: default;
 }
 #branch-education {
-  left: -6vh;
-  top: -4vh;
+  left: -9vh;
+  top: -2vh;
   background-image: url("images/luc-back.jpg");
   background-size: cover;
   transform-origin: bottom right;
 }
 #branch-work {
-  right: -6vh;
-  top: -4vh;
+  right: -9vh;
+  top: -2vh;
   background-image: url("images/office.jpg");
   background-size: cover;
   transform-origin: bottom left;
@@ -98,5 +99,12 @@ body {
   background-image: url("images/blog.jpg");
   background-size: cover;
   transform-origin: top;
-  color: white;
+}
+#branch-cert {
+  top: -11.5vh;
+  right: 12.5vh;
+  font-size: 1.2vh;
+  background-image: url("images/fcc-certificate.jpg");
+  background-size: cover;
+  transform-origin: bottom;
 }
