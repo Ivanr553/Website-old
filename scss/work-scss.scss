@@ -14,8 +14,70 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+.work-box {
+  float: left;
+  width: 45vw;
+  height: 31vh;
+  margin: 8vh 1.25vw 2vh 1.25vw;
+  background-color: rgba(20,20,20, 0.8);
+  position: relative;
+  padding: 1.5vw;
+  animation: shrink-it 1s forwards;
+  color: rgba(200, 200, 200, 0.75);
+}
+.image {
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 6.5vh;
+  font-family: monospace;
+  color: black;
+}
+.work-div {
+  display: none;
+  opacity: 0;
+  width: 90%;
+}
+#ap-image {
+  background-image: url("images/ecodome-work.jpg");
+  margin-bottom: 2vh;
+}
+.work-box:hover {
+  animation: expand-it 1s forwards;
+}
+.work-box:hover .work-div {
+  display: inline;
+  animation: work-div-show 1s forwards;
+}
+@keyframes shrink-it {
+  0% {
+    height: 83vh;
+  }
+  100% {
+    height: 31vh;
+  }
+}
+@keyframes expand-it {
+  0% {
+    height: 31vh;
+  }
+  100% {
+    height: 83vh
+  }
+}
+@keyframes work-div-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
