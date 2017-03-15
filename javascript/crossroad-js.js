@@ -8,11 +8,11 @@ function openGit() {
 }
 
 function openEducation() {
-  window.open("file:///C:/Users/Ivan/Documents/WebDev/Website/education-html.html", "_self");
+  window.open("Website/education-html.html", "_self");
 }
 
 function openBlog() {
-  window.open("file:///C:/Users/Ivan/Documents/WebDev/Website/blog-html.html", "_self");
+  window.open("Website/blog-html.html", "_self");
 }
 
 function openFccCert() {
@@ -20,5 +20,5 @@ function openFccCert() {
 }
 
 function openWork() {
-  window.open("file:///C:/Users/Ivan/Documents/WebDev/Website/work-html.html");
+  window.open("Website/work-html.html");
 }
