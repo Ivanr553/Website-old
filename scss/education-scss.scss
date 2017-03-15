@@ -38,7 +38,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-bottom: 0px;
-  background-image: url("https://images7.alphacoders.com/697/697523.jpg");
+  background-image: url("images/book-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -253,7 +253,7 @@ a {
   }
   33% {
     opacity: 1;
-    background-image: url("http://www.luc.edu/media/lucedu/sustainability-new/images420/ies-sun420.jpg");
+    background-image: url("images/ies-sun.jpg");
   }
   50% {
     opacity: 0;
@@ -267,7 +267,7 @@ a {
   }
   100% {
     opacity: 1;
-    background-image: url("http://farm8.staticflickr.com/7635/17237749701_e54ea732e1_b.jpg");
+    background-image: url("images/ccc.jpg");
   }
 }
 @keyframes slideshow-greenhouse {
