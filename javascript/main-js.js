@@ -8,11 +8,11 @@ function openGit() {
 }
 
 function openEducation() {
-  window.open("education-html.html", "_self");
+  window.open("Education.html", "_self");
 }
 
 function openBlog() {
-  window.open("blog-html.html", "_self");
+  window.open("Blog.html", "_self");
 }
 
 function openFccCert() {
@@ -20,5 +20,5 @@ function openFccCert() {
 }
 
 function openWork() {
-  window.open("work-html.html");
+  window.open("Work.html");
 }
