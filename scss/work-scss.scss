@@ -8,6 +8,12 @@ body {
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+h1 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 42vw;
+}
 #div-body-work {
   background-image: url("images/office.jpg");
   background-size: cover;
@@ -37,25 +43,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 6.5vh;
+  font-size: 7.2vh;
   font-family: monospace;
   color: black;
+  margin-bottom: 2vh;
 }
 .work-div {
   display: none;
   opacity: 0;
   width: 90%;
 }
+#wm-image {
+  background-image: url("images/costplus.jpg");
+}
 #ap-image {
   background-image: url("images/ecodome-work.jpg");
-  margin-bottom: 2vh;
 }
 .work-box:hover {
   animation: expand-it 1s forwards;
 }
-.work-box:hover .work-div {
+#world-market-box:hover #wm-p {
   display: inline;
-  animation: work-div-show 1s forwards;
+  animation: wm-p-show 1s forwards;
+  animation-delay: 300ms;
+}
+#ap-manager:hover #ap-p {
+  display: inline;
+  animation: ap-p-show 1s forwards;
+  animation-delay: 300ms;
 }
 @keyframes shrink-it {
   0% {
@@ -73,7 +88,15 @@ body {
     height: 83vh
   }
 }
-@keyframes work-div-show {
+@keyframes ap-p-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wm-p-show {
   0% {
     opacity: 0;
   }
