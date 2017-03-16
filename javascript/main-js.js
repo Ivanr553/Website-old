@@ -20,5 +20,5 @@ function openFccCert() {
 }
 
 function openWork() {
-  window.open("Work");
+  window.open("Work", "_self");
 }
