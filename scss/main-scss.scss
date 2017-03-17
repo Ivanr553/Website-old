@@ -60,53 +60,53 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-size: 2.7vh;
+  font-size: 2.4vh;
   font-family: monospace;
   cursor: default;
   background-image: url("images/tgif-me-edit-1.jpg");
   background-size: cover;
 }
 #branch-education {
-  left: -9vh;
-  top: -2vh;
+  left: -5vh;
+  bottom: -5vh;
   background-image: url("images/luc-back.jpg");
   background-size: cover;
-  transform-origin: bottom right;
+  transform-origin: top right;
 }
-#branch-work {
+/*--#branch-work {
   right: -9vh;
   top: -2vh;
   background-image: url("images/office.jpg");
   background-size: cover;
   transform-origin: bottom left;
   font-size: 2.4vh;
-}
+}--*/
 #branch-resume {
-  left: -9vh;
-  bottom: 2vh;
+  right: -5vh;
+  bottom: -5vh;
   background-image: url("images/resume-img.jpg");
-  background-size: cover;
-  transform-origin: top right;
-}
-#branch-projects {
-  right: -9vh;
-  bottom: 2vh;
-  background-image: url("images/git.png");
   background-size: cover;
   transform-origin: top left;
 }
+#branch-projects {
+  left: -9vh;
+  top: 2vh;
+  background-image: url("images/git.png");
+  background-size: cover;
+  transform-origin: bottom right;
+}
 #branch-blog {
-  bottom: -11.5vh;
+  top: -11.5vh;
   right: 12.5vh;
   background-image: url("images/blog.jpg");
   background-size: cover;
-  transform-origin: top;
+  transform-origin: bottom;
 }
 #branch-cert {
-  top: -11.5vh;
-  right: 12.5vh;
+  top: 2vh;
+  right: -9vh;
   font-size: 1.2vh;
   background-image: url("images/fcc-certificate.jpg");
   background-size: cover;
-  transform-origin: bottom;
+  transform-origin: bottom left;
 }
