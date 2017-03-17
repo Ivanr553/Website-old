@@ -1,7 +1,6 @@
 html {
   height: 100%;
   margin: 0px;
-  /*background-color: rgb(208, 226, 242);*/
 }
 body{
   margin: 0px;
@@ -12,8 +11,6 @@ header {
   height: 100vh;
   background-size: cover;
   margin-bottom: 0px;
-  /*box-shadow: 0px 0px 50px black;
-  border-bottom: 7px solid rgba(0, 0, 0, 0.5);*/
 }
 span {
   text-align: center;
@@ -21,6 +18,29 @@ span {
 a {
   display: inline;
   color: rgba(255, 255, 255, 0.8);
+}
+#back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4.5vw;
+  height: auto;
+  padding: 1vh;
+  margin-left: 0.1vw;
+  margin-top: 0.1vw;
+  font-size: 2vw;
+  text-align: center;
+  border-radius: 0.2vw;
+  background-color: rgba(20,20,20, 0.8);
+  color: rgba(200, 200, 200, 0.9);
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition-duration: 0.5s;
+  transform-origin: top left;
+}
+#back:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
 }
 .span-body {
   width: 60vw;
@@ -42,15 +62,17 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/*#luc-logo {
+#luc-logo {
   height: 15vh;
-  width: 20vh;
+  width: 15vh;
   position: absolute;
   right: 3vw;
   top: 4vh;
   padding: 0.5vh;
   background-color: rgba(20,20,20, 0.4);
-}*/
+  border-radius: 500px;
+  cursor: pointer;
+}
 #greenhouse {
   background-image: url("images/Ecodome.jpg");
   background-size: cover;
