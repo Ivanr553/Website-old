@@ -1,6 +1,6 @@
 function openResume() {
   //made changes here
-  window.open("https://docs.google.com/document/d/1womPl9LSMAqnITcXp-oxCOav6rPgmvj1imeujseu-JA/edit?usp=sharing");
+  window.open("https://docs.google.com/document/d/1eKOP6shTZBmQctvvXbyY0QH60_EjZf_7ymdu3D6BLDk/edit?usp=sharing");
 }
 
 function openGit() {
