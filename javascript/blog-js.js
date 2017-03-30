@@ -1,3 +1,3 @@
 function openMain() {
-  window.open("Main", "_self");
+  window.open("index", "_self");
 }
