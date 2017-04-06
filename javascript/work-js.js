@@ -9,5 +9,5 @@ function openRaincheck() {
 }
 
 function openTokiwa() {
-  window.open("www.ivanraffucci.tech/Tokiwa/index.html");
+  window.open("/Tokiwa/index.html");
 }
