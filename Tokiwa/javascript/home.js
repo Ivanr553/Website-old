@@ -11,9 +11,6 @@ function photos() {
   window.open("https://www.yelp.com/biz_photos/tokiwa-sushi-moorpark-3");
 }
 
-function addback() {
-  document.getElementById("body").style.background = "red";
-}
 
 //PRELOAD IMAGES
 $('<img src="scss/images/ramen1.jpg"/>');
@@ -48,8 +45,8 @@ function carousel(int) {
 //BODY IMAGE CHANGE ON SCROLL
 $(document).ready( function(){
   $(window).scroll(function(){
-    let fromTop = document.documentElement.clientHeight*3.25;
-  if(jQuery(window).scrollTop() > fromTop) {
+    let fromTop = $(window).height()*0.2;
+  if($(window).scrollTop() > fromTop*2.8) {
     document.getElementById("body").style.backgroundImage = "url('scss/images/prep-fish-edit.jpg')";
   }
   else {
@@ -58,7 +55,7 @@ $(document).ready( function(){
 })})
 
 function viewPos() {
-  console.log($(window).innerWidth())
+  console.log($(window).scrollTop())
 }
 
 $(window).scroll(function() {
@@ -98,7 +95,6 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
   if($(window).innerWidth() < 650) {
-    document.getElementById("body-div-images").style.top = "50vw";
     document.getElementById("mySlides-span-2").style.bottom = "25vw";
     document.getElementById("mySlides-span-2").style.right = "0";
   }
@@ -106,12 +102,10 @@ $(document).ready(function() {
 
 $(window).resize(function() {
   if($(window).innerWidth() < 650) {
-    document.getElementById("body-div-images").style.top = "50vw";
     document.getElementById("mySlides-span-2").style.bottom = "25vw";
     document.getElementById("mySlides-span-2").style.right = "0";
   }
   else {
-    document.getElementById("body-div-images").style.top = "12vw";
     document.getElementById("mySlides-span-2").style.bottom = "17vw";
     document.getElementById("mySlides-span-2").style.right = "-3vw";
   }

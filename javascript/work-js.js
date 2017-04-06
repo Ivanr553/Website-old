@@ -7,3 +7,7 @@ function openMain() {
 function openRaincheck() {
   window.open("https://frozen-springs-75857.herokuapp.com/");
 }
+
+function openTokiwa() {
+  window.open("https://ivanraffucci.tech/Tokiwa/index.html")
+}
