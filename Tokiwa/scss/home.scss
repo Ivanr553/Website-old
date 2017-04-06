@@ -19,18 +19,12 @@ header{
   padding: none;
 }
 img{
-  width: 45vw;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 .mySlides{
   position: absolute;
   opacity: 0;
-}
-#body-img{
-  height: 40vh;
-  width: auto;
-  margin: auto;
-  margin-right: 0;
 }
 .nav-bar{
   top: 0;
@@ -88,24 +82,25 @@ img{
 .body-div-2{
   height: 120vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   background-color: white;
   box-shadow: inset 0 5px 30px -8px black;
-  position: relative;
 }
 .body-div-images {
-  position: absolute;
-  left: 5vw;
-  top: 12vw;
+  display: flex;
+  margin: auto;
+  height: 25vw;
+  width: 38vw;
+  position: relative;
 }
 .body-div-images-plus {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 30vw;
-  width: 4vw;
+  height: 100%;
+  width: 3vw;
   position: absolute;
-  left: 41vw;
+  right: 0;
   top: 0;
   z-index: 1;
   cursor: pointer;
@@ -119,7 +114,7 @@ img{
 }
 .body-div-images-minus {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 30vw;
+  height: 100%;
   width: 4vw;
   position: absolute;
   left: 0vw;
@@ -139,13 +134,11 @@ img{
   font-style: italic;
 }
 .mySlides-span-2 {
-  position: absolute;
-  bottom: 17vw;
-  right: -3vw;
+  display: flex;
 }
 .body-div-2-cont{
   width: 38vw;
-  margin: 0 5vw 0 55vw;
+  margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
