@@ -93,21 +93,3 @@ $(window).scroll(function() {
 
 
 })
-
-$(document).ready(function() {
-  if($(window).innerWidth() < 650) {
-    document.getElementById("mySlides-span-2").style.bottom = "25vw";
-    document.getElementById("mySlides-span-2").style.right = "0";
-  }
-})
-
-$(window).resize(function() {
-  if($(window).innerWidth() < 650) {
-    document.getElementById("mySlides-span-2").style.bottom = "25vw";
-    document.getElementById("mySlides-span-2").style.right = "0";
-  }
-  else {
-    document.getElementById("mySlides-span-2").style.bottom = "17vw";
-    document.getElementById("mySlides-span-2").style.right = "-3vw";
-  }
-})
