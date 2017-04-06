@@ -59,31 +59,32 @@ function viewPos() {
 }
 
 $(window).scroll(function() {
+  let fromTop = $(window).height()*0.2;
   if($(window).scrollTop() > 0) {
     let btns = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < btns.length; i++) {
       btns[i].style.color = "white";
     }
   }
-  if($(window).scrollTop() > 700) {
+  if($(window).scrollTop() > fromTop*0.9) {
     let btns = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < btns.length; i++) {
       btns[i].style.color = "black";
     }
   }
-  if($(window).scrollTop() > 1455) {
+  if($(window).scrollTop() > fromTop*1.85) {
     let btns = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < btns.length; i++) {
       btns[i].style.color = "white";
     }
   }
-  if($(window).scrollTop() > 2110) {
+  if($(window).scrollTop() > fromTop*2.68) {
     let btns = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < btns.length; i++) {
       btns[i].style.color = "black";
     }
   }
-  if($(window).scrollTop() > 2910) {
+  if($(window).scrollTop() > fromTop*3.7) {
     let btns = document.getElementsByClassName("nav-btn");
     for(let i = 0; i < btns.length; i++) {
       btns[i].style.color = "white";
